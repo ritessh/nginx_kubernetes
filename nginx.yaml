@@ -9,5 +9,5 @@ desiredState:
       - name: nginx
         image: nginx:latest
         ports:
-          - hostPort: 8090
+          - hostPort: 8091
             containerPort: 80
