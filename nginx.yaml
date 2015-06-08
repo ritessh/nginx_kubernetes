@@ -1,0 +1,13 @@
+apiVersion: v1beta1
+id: nginx
+kind: Pod
+desiredState:
+  manifest:
+    version: v1beta1
+    id: nginx
+    containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+          - hostPort: 8090
+            containerPort: 80
